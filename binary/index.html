@@ -1,0 +1,65 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>calculator</title>
+       <link rel = "icon" href ="icon.png" type = "image/x-icon"> 
+        <link rel="stylesheet" href="css/binaryCalculator.css" type="text/css">
+    </head>
+    <body>
+        <script src="js/binaryCalculator.js" type="text/javascript"></script>
+        <h1 style = "color:green;">Calculator</h1> 
+      <form name="myform" >
+         <div>
+            <label for="fname">Equation</label>
+            <input type="text" id="fname" name="display" placeholder="Equation">
+            <label for="lname">Result</label>
+            <input type="text" id="lname" name="display1" placeholder="Result">
+                         
+            <button class="button" style="height:60px;width:105px" type="button" name = "btninverse" onclick="inverse()"> x<sup>-1</sup> </button>
+            <input class="button" style="height:60px;width:105px" type="button" name="btnlog" value="log"  onclick="ln()">
+            <button class="button" style="height:60px;width:105px" type="button" name="btncube" onclick="exp()">e<sup>x</sup> </button>
+            <input class="button" style="height:60px;width:105px" type="button" name="btnopenbrac" value="("  onclick="myclick('(')">
+            <input class="button" style="height:60px;width:105px" type="button" name="btnclosebrac" value=")"  onclick="myclick(')')"><br>
+             
+            <button class="button button2" style="height:60px;width:105px" type="button" name="btnsininverse" onclick="asin()">sin<sup>-1</sup></button>
+            <button class="button button2" style="height:60px;width:105px" type="button" name="btncosinverse" onclick="acos()">cos<sup>-1</sup></button>
+            <button class="button button2" style="height:60px;width:105px" type="button" name="btntaninverse" onclick="atan()">tan<sup>-1</sup></button>
+            <button class="button button4" style="height:60px;width:105px" type="button" name="btnsqr" onclick="square()">x<sup>2</sup></button>
+            <button  class="button button4" style="height:60px;width:105px" type="button" name="btnrooty"  onclick="sqrt()"><sup>2</sup>√x</button><br>
+             
+            <input  class="button button2" style="height:60px;width:105px" type="button" name="btnsin" value=" sin "  onclick="sin()">
+            <input  class="button button2" style="height:60px;width:105px" type="button" name="btncos" value="cos"  onclick="cos()">
+            <input  class="button button2" style="height:60px;width:105px" type="button" name="btntan" value=" tan "  onclick="tan()">
+            <button class="button button4" style="height:60px;width:105px" type="button" name="btnpie" onclick="myclick('3.14362')" >π</button>
+            <input  class="button button4" style="height:60px;width:105px" type="button" name="btnsqrt" value=","  onclick="myclick(',')"><br>
+             
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btn7" value="  7  " onclick="myclick('7')">
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btn8" value="  8  " onclick="myclick('8')">
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btn9" value="  9  " onclick="myclick('9')">
+            <input class="button button5" style="height:60px;width:105px" type="button" name="btndel" value="DEL" onclick="backspace()">
+            <input class="button button5" style="height:60px;width:105px" type="button" name="btnac" value="AC" onclick="ac()"><br>
+             
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btn4" value="  4  " onclick="myclick('4')">
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btn5" value="  5  " onclick="myclick('5')">
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btn6" value="  6  " onclick="myclick('6')">
+            <input class="button button6" style="height:60px;width:105px" type="button" name="btnsub" value="   -   " onclick="myclick('-')">
+            <input class="button button6" style="height:60px;width:105px" type="button" name="btnadd" value="  + " onclick="myclick('+')"><br>
+             
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btn1" value="  1  " onclick="myclick('1')">
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btn2" value="  2  " onclick="myclick('2')">
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btn3" value="  3  " onclick="myclick('3')">
+            <input class="button button6" style="height:60px;width:105px"  type="button" name="btnmul" value="   *   " onclick="myclick('*')">
+            <input class="button button6" style="height:60px;width:105px" type="button" name="btndiv" value="  /  " onclick="myclick('/')"><br>
+             
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btnzero" value="  0  " onclick="myclick('0')">
+            <input class="button button3" style="height:60px;width:105px" type="button" name="btntwozero" value=" 00 " onclick="myclick('00')">
+            <input class="button"style="height:60px;width:105px"  type="button" name="btnpoint" value="   .  " onclick="myclick('.')">
+            <button class="button button6" style="height:60px;width:105px" type="button" name="btnex" onclick="myclick('%')" >%</button>
+            <input class="button button4"style="height:60px;width:105px"  type="button" name="factorial" value="+/-" onclick="changeSign()">
+            <input class="button button7" style="height:60px;width:554px" type="button" name="btnequal" value="=" onclick="equalto()"><br>
+         </div>
+      </form>
+    </body>
+</html>

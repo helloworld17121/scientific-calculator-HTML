@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+var pic;
+function begin()
+{
+pic = document.getElementById("pic");
+window.onmousemove=function(e)
+{
+pic.style.top=e.pageY;
+pic.style.left=e.pageX;
+};
+}
+</script>
+</head>
+<body onload="begin()">
+<img id="pic" src="icon.png" style="position:absolute">
+</body>
+</html>
